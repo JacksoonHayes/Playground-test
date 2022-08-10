@@ -1,0 +1,48 @@
+html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+          <div class="nav wrapper">
+            <a href="a" class="brand logo right">ToDo List</a>
+          </div>
+        </nav>
+
+        <div class="container">
+            <form name="todo-list" name="title" placeholder="Add task">
+                    <input type="text" name="title" placeholder="Add task">
+                    <button class="waves-effect waves-light btn">Add</button>
+            </form>
+
+            <ul class="collection"> id=todo-list
+                <li class="collection-item">
+                    <div>
+                        <span>Buying food</span>
+                        <i class="material-icons secondary-content">delete</i>
+                        <a href="#model" class="modal-trigger secondary-content">
+                            <i class="material-icons">edit</i>
+                         </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="modal" class="modal">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
