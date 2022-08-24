@@ -1,0 +1,51 @@
+body {
+    font: normal bold normal 1em
+        Verdana, Helvetica, sans-serif;
+    color: black;
+   
+}
+
+h1 {
+    font: italic small-caps 900 2.5em              /* STYLE > VARIANT > WEIGHT > SIZE > FONT FAMILY in that order when writing 1 line code */
+        "Times New Roman", Times, serif;
+    color: blue;
+}
+
+h2 {
+    font-family: serif, sans-serif;
+    color: green;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+h3 {
+    font-family: Verdana, Times, serif;
+    color: red;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.small {
+    font-size: 0.75em;
+}
+
+.note {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.dark {
+    font-weight: darker;
+}
+
+.smcaps {
+    font-variant: small-caps;
+}
+
