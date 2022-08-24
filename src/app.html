@@ -1,4 +1,4 @@
-html <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -10,47 +10,15 @@ html <!DOCTYPE html>
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="app.css">
-        <title>Todo list</title>
     </head>
     <body>
-        <nav>
-          <div class="nav wrapper">
-            <a href="a" class="brand logo right">ToDo List</a>
-          </div>
-        </nav>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="app.js" async defer></script>
 
-        <div class="container">
-            <form name="todo-list" name="title" placeholder="Add task">
-                    <input type="text" name="title" placeholder="Add task">
-                    <button class="waves-effect waves-light btn">Add</button>
-            </form>
-
-            <ul class="collection" id="todo-list">
-                <li class="collection-item">
-                    <div>
-                        <span>Buying food</span>
-                        <i class="material-icons secondary-content">delete</i>
-                        <a href="#model" class="modal-trigger secondary-content">
-                            <i class="material-icons">edit</i>
-                         </a>
-                    </div>
-                </li>
-            </ul>
-
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <input type="text" name="newtitle" placeholder="Update task">
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" id="update" class="modal-close waves-effect waves-green btn-flat">Update</a>
-
-                </div>
-            </div>
-        </div>
-<script src="app.js"></script>
+        <p> Test paragraph to trial font styles.</p>
     </body>
 </html>
