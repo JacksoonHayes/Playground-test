@@ -1,0 +1,113 @@
+body {
+    font: normal bold normal 1em
+        Verdana, Helvetica, sans-serif;               /* 1 line code */
+    color: black;
+   
+}
+
+h1 {
+    font: italic small-caps 900 2.5em              /* STYLE > VARIANT > WEIGHT > SIZE > FONT FAMILY in that order when writing 1 line code */
+        "Times New Roman", Times, serif;
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    font-family: serif, sans-serif;
+    color: green;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;                                  /* multi line code*/
+    font-variant: small-caps;
+}
+
+h3 {
+    font-family: Verdana, Times, serif;
+    color: red;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.small {
+    font-size: 0.75em;
+}
+
+.note {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.dark {
+    font-weight: darker;
+}
+
+.smcaps {
+    font-variant: small-caps;
+}
+
+.search {
+    text-align: right;
+}
+
+.special {
+    text-align: justify;                  
+}
+
+.footnote {
+    text-align: center;
+}
+
+.td {
+    vertical-align: top;
+}
+
+td.special {
+    vertical-align: middle;
+}
+
+td.footnote {
+    vertical-align: bottom;
+}
+
+.totals {
+    text-decoration: overline;
+}
+
+.edit {
+    text-decoration: line-through;
+}
+
+.title {
+    text-transform: lowercase;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+p.semi {
+    text-indent: 50px;
+    line-height: 1.5;
+}
+
+p.full {
+    text-indent: 10%;
+    line-height: 2em;
+}
+
+p.loose {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+p.compressed {
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
