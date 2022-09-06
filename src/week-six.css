@@ -1,6 +1,6 @@
 body {
     font: normal bold normal 1em
-        Verdana, Helvetica, sans-serif;               /* 1 line code */
+        Verdana, Helvetica, sans-serif;               /* 1 line code style */
     color: black;
    
 }
@@ -10,6 +10,7 @@ h1 {
         "Times New Roman", Times, serif;
     color: blue;
     text-shadow: 2px 2px 2px black;
+    outline: 1px solid red;
 }
 
 h2 {
@@ -17,7 +18,7 @@ h2 {
     color: green;
     font-size: 2em;
     font-weight: 900;
-    font-style: italic;                                  /* multi line code*/
+    font-style: italic;                                  /* multi line code style */
     font-variant: small-caps;
 }
 
@@ -32,20 +33,30 @@ h3 {
 
 .small {
     font-size: 0.75em;
+    margin: 2em 4px;
 }
 
 .note {
     font-weight: bold;
     text-decoration: underline;
     text-transform: uppercase;
+    padding: 15px 2px 3px 4px;
 }
 
 .light {
     font-weight: lighter;
+    padding-top: 1px;
+    padding-right: 2px;
+    padding-bottom: 3px;
+    padding-left: 4px;
 }
 
 .dark {
     font-weight: darker;
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 4px;
 }
 
 .smcaps {
@@ -54,14 +65,21 @@ h3 {
 
 .search {
     text-align: right;
-}
-
+    padding: 1px 2px 3px 4px;                             /* top right bottom left order for padding. 1 value for padding will do all 4*/
+}                                                         /* 2 padding values, first will do top/bottom, second value will be for left/right */
+                                                          /* 3 padding values. first will do top, second will do left/right, third will do bottom */
 .special {
-    text-align: justify;                  
+    text-align: justify; 
+    height: 100px; width: 100px;
+    border: 1px solid red;
+    margin: auto;                 
 }
 
 .footnote {
     text-align: center;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .td {
@@ -111,3 +129,100 @@ p.compressed {
     letter-spacing: -1px;
     word-spacing: -1px;
 }
+
+div {
+    color: olivedrab;
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: black;
+    color: white;
+}
+
+.b {
+    grid-area: 5 / 7 / 2 / 4;
+    background-color: red;
+    color: white;
+}
+
+.c {
+    grid-area: 6 / 5 / 3 / 2;
+    background-color: blue;
+    color: white;
+}
+
+.d {
+    grid-area: 3 / 4 / 1 / 2;
+    background-color: green;
+    color: white;
+}
+
+.e {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: yellow;
+    color: black;
+}
+
+.f {
+    grid-column: 7 / 10;
+    grid-row: 3 / 4;
+    background-color: purple;
+    color: white;
+}
+
+.wrapper {
+    width: 100%;                                                /* display grid: */
+    max-height: 960px;                                          /* grid-template-rows: */
+    margin: 0 auto;                                             /*   10px auto 10px auto 10px auto 10px auto; */
+    display: grid;                                              /*   grid-template-areas' */
+    grid-template-columns: 30% 5% 65%;                          /*  "."  */
+    grid-template-rows: 40px auto 20px auto;                    /*  "header"   */
+}                                                               /*  "."   */
+                                                                /*  "content" */
+.mainheader {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;                                        /* position based of line numbers ie. 2 / 4 */
+    background-color: black;
+}
+
+.panel {
+    grid-column: 1 / 2;
+    grid-row: row-panel-start 6 / row-panel-end 7;               /* grid-area: sidebar. can rename with class */
+    background-color: blue;
+}
+
+.content {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;                                        /* grid-area: content. assigning a name to the elements on the page (content, header, panel/sidebar, footer) */
+    background-color: red;        
+}
+
+.mainfooter {
+    grid-column: 1 / 4;
+    grid-row: 8 / 9;
+    background-color: green;
+}
+
+/* @media (min-width: 550px) {
+    .wrapper {
+        grid-template-columns: 30% 5% 65%;
+        grid-template-rows:                                              
+        grid-template-areas:
+        "..."
+        "header header header"
+        "..."
+        "sidebar . content"
+        "..."
+        "footer footer footer";
+    }
+} */
+
+/* z index can be used to overlay content/panels on top of each other. the higher the number the higher it will be on the page. */
+/* can use grid-template-columns: repeat (4, 200px 20px); to repeat for 4 columns. */
+
+/* to give multiple grid lines the same name, repeat(4, [col] 200px [gutter] 20px)  sqaure brackets used for the name*/
