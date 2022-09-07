@@ -1,0 +1,54 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+ 
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: verdana;
+    background-color: olive;
+    border: 2px solid black; 
+}
+
+.box1 {
+    background-color: red;
+
+}
+.box2 {
+    background-color: blue;
+   
+}
+.box3 {
+    background-color: green;
+   
+}
+.box4 {
+    background-color: yellow;
+    
+}
+.box5 {
+    background-color: purple;
+    
+}
+.box6 {
+    background-color: orange;
+    
+}
+.box7 {
+    background-color: black;
+    
+}
+.box8 {
+    background-color: teal;
+   
+}
+.box9 {
+    background-color: pink;
+    
+}
+.box10 {
+    background-color: brown;
+    
+}
