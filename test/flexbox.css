@@ -1,8 +1,9 @@
 .parent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
+
  
     color: white;
     text-align: center;
@@ -14,10 +15,11 @@
 
 .box1 {
     background-color: red;
-
+    flex: 1 0 auto;
 }
 .box2 {
     background-color: blue;
+    flex: 1 0 auto;
    
 }
 .box3 {
@@ -50,5 +52,6 @@
 }
 .box10 {
     background-color: brown;
+    flex: 0 2 auto;
     
 }
